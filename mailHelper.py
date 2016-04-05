@@ -93,8 +93,9 @@ def analysis_mail(select):
 		student_number = raw_input("please input the student number: ")
 	
 
-	email = 'javahomework2016'
-	password = '1q2w3e'
+	email = 'your_email'
+	#这里输入的授权密码，不是登陆密码
+	password = 'you_pass'
 	pop3_server = 'pop.126.com'
 
 	#connect to pop3 server
