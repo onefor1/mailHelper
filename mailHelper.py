@@ -89,7 +89,7 @@ def analysis_mail(select):
 	
 	if select == "1":
 		job_number = raw_input("please input the job number: ")
-	else select =="2":
+	if select =="2":
 		student_number = raw_input("please input the student number: ")
 	
 
