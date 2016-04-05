@@ -89,12 +89,12 @@ def analysis_mail(select):
 	
 	if select == "1":
 		job_number = raw_input("please input the job number: ")
-	if select =="2":
+	if select == "2":
 		student_number = raw_input("please input the student number: ")
 	
 
 	email = 'your_email'
-	#这里输入的授权密码，不是登陆密码
+	#这里输入的是授权密码，不是登陆密码
 	password = 'you_pass'
 	pop3_server = 'pop.126.com'
 
@@ -131,15 +131,15 @@ def print_menu():
 	print "2.download specify homework by student number"
 	print "3.download all the homework"
 	print "4.exit"
-	select = raw_input("")
 
 if __name__ == "__main__":
 	print_menu()
+	select = raw_input("")
 	while 1:
-		if select == "3":
+		if select == "4":
 			break
 		else:
 			analysis_mail(select)
-		
 		print_menu()
+		select = raw_input("")
 	
